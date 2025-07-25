@@ -1,0 +1,141 @@
+:root {
+  --background-color: #16161a;
+  --headline-color: #fffffe;
+  --paragraph-color: #94a1b2;
+  --button-bg-color: #7f5af0;
+  --button-text-color: #fffffe;
+  --stroke-color: #010101;
+  --main-color: #fffffe;
+  --highlight-color: #7f5af0;
+  --secondary-color: #72757e;
+  --tertiary-color: #2cb67d;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  font-family: sans-serif;
+  margin: 0;
+  scroll-behavior: smooth;
+  color: var(--paragraph-color);
+  background: linear-gradient(to right, #2f0a4d, #16161a);
+}
+
+/* Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(127, 90, 240, 0.5); /* color of the scroll thumb */
+  border-radius: 10px; /* roundness of the scroll thumb */
+  border: 2px solid transparent; /* creates padding around scroll thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--highlight-color); /* color of the scroll thumb on hover */
+}
+
+a {
+  text-decoration: none;
+  color: var(--highlight-color);
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section__title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--headline-color);
+}
+
+.btn {
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+}
+
+.btn--primary:hover {
+  filter: brightness(1.2);
+}
+
+.btn--secondary {
+  background-color: transparent;
+  color: var(--highlight-color);
+  border: 2px solid var(--highlight-color);
+}
+
+.btn--secondary:hover {
+  background-color: var(--highlight-color);
+  color: var(--button-text-color);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.2s ease-out;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px; /* Define um tamanho de fonte base menor para o HTML em telas pequenas */
+  }
+
+  .section__title {
+    font-size: 2rem;
+  }
+
+  .hero-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-container p {
+    font-size: 1rem;
+  }
+
+  .about-container h2,
+  .contact-container h2 {
+    font-size: 2rem;
+  }
+
+  .about-container p,
+  .contact-container p {
+    font-size: 0.9rem;
+  }
+}

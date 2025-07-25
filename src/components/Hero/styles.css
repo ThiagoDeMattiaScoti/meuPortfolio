@@ -1,0 +1,35 @@
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 0; /* Adicionando um padding para espaçamento */
+  min-height: 70vh;
+}
+
+.hero-container h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: var(--headline-color);
+}
+
+.hero-container p {
+  font-size: 1.5rem;
+  color: var(--paragraph-color);
+  margin-bottom: 2rem;
+}
+
+.hero-button {
+  margin-top: 40px;
+  padding: 18px 35px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(127, 90, 240, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(127, 90, 240, 0.6);
+}

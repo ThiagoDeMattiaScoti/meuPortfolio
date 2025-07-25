@@ -1,0 +1,89 @@
+.navbar {
+  background: rgba(22, 22, 26, 0.25);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border-radius: 0;
+  border: none;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  padding: 0;
+}
+
+.navbar-logo {
+  color: var(--headline-color);
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.nav-item {
+  height: 80px;
+}
+
+.nav-links {
+  color: var(--paragraph-color);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+}
+
+.nav-links:hover {
+  color: var(--highlight-color);
+  border-bottom: 3px solid var(--highlight-color);
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    display: none; /* Oculta o menu em telas pequenas */
+  }
+
+  .navbar-logo {
+    position: static;
+    transform: none;
+    margin-left: 0; /* Remove a margem esquerda */
+    font-size: 1.5rem; /* Reduz o tamanho da fonte */
+  }
+
+  .navbar-container {
+    justify-content: center; /* Centraliza o logo */
+    padding: 0 15px; /* Ajusta o padding */
+  }
+
+  .menu-icon {
+    display: none; /* Garante que o ícone do menu hambúrguer esteja oculto */
+  }
+}

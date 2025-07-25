@@ -1,0 +1,70 @@
+.skills-container {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.skills-container h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: var(--headline-color);
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Espaçamento entre as linhas de habilidades */
+  align-items: center;
+}
+
+.skills-row {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-list li {
+  background: rgba(22, 22, 26, 0.25);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: var(--button-text-color);
+  padding: 0.6rem 1.1rem;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+}
+
+.skills-list li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.skill-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .skills-list li {
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+  }
+
+  .skills-row {
+    gap: 0.5rem;
+  }
+
+  .skill-icon {
+    width: 20px;
+    height: 20px;
+  }
+}

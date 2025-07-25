@@ -1,0 +1,54 @@
+.contact-container {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--headline-color);
+}
+
+.contact-container p {
+  font-size: 1.2rem;
+  color: var(--paragraph-color);
+  margin-bottom: 2rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 2rem; /* Adiciona margem abaixo dos botões sociais */
+}
+
+.contact-button {
+  margin-top: 20px;
+  padding: 18px 35px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(127, 90, 240, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(127, 90, 240, 0.6);
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: var(--button-bg-color);
+  color: var(--button-text-color);
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.social-button:hover {
+  filter: brightness(1.2);
+}
