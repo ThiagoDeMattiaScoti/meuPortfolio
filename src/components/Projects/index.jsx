@@ -28,7 +28,7 @@ const Projects = () => {
               </a>
             </div>
             <div className="project-skills-summary">
-              {project.skills.slice(0, 6).map((skill, index) => (
+              {project.skills.map((skill, index) => (
                 skill.icon && <img key={index} src={skill.icon} alt={skill.name} className="skill-icon" style={skill.invert ? { filter: 'invert(1)' } : {}} />
               ))}
             </div>
